@@ -1,0 +1,119 @@
+.hero-section{
+    margin: 0;
+        padding: 20px 60px; display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #fff;
+
+    .card{
+        padding: 20px 0;
+        background-color: rgba(255, 228, 196, 0.095);
+      
+        &__list{
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+            justify-content: space-around;
+        }
+
+        &__image{
+            margin-top: 16px;
+            align-items: center;
+        }
+        &__tt{
+            background-color: rgba(0, 0, 0, 0.643);
+            color: chartreuse;
+            padding: 12px;
+            border-radius: 50pc;
+            
+        }
+
+        &__link{
+            color:rgba(0, 0, 0, 0.78);
+        }
+    }
+
+    .car{
+        padding: 5px 60px;
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+
+         
+        }
+        .link{
+            color: rgb(0, 0, 0);
+            border-bottom: 3px solid transparent;
+            padding-bottom: 3px;
+            padding: 6px 10px;
+            &:hover{
+            border-radius: 30px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.485);
+            }
+
+            &:active{
+                background-color: rgba(0, 0, 0, 0.142);
+            border-radius: 30px;
+            color:green;
+            }
+
+        
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section{
+        min-width: 100%;
+        
+        .card{
+
+            &__list{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .car{
+
+            &__list{
+                text-align: start;
+                flex-direction: column;
+            }
+
+           &__item{
+                text-align: start;
+                margin: 20px 0;
+           }
+        }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .hero-section{
+        min-width: 100%;
+        
+        .card{
+
+            &__list{
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .car{
+
+            &__list{
+                text-align: start;
+                flex-direction: column;
+            }
+
+           &__item{
+                text-align: start;
+                margin: 20px 0;
+           }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.two-section{
+padding: 180px 0;
+    .two{
+        display: flex;  
+        align-items: center;
+        justify-content: space-around;
+
+        &__box{
+            margin-top: 40px;
+
+            &__title{
+                padding: 40px;
+            }
+
+            &__text{
+                padding: 20px 20px 20px 40px;
+            }
+            &__text2{
+                padding: 0 40px;
+                color: rgba(0, 0, 0, 0.49);
+                width: 470px;
+
+            }
+        }
+
+        &__box2{
+            position: relative;
+
+
+            &__img1{
+                position: absolute;
+                left: 200px;
+                top: -100px;
+            }
+
+            &__title{
+                padding: 30px 50px;
+            }
+           &__text{
+                padding:0 50px;
+                color: rgba(0, 0, 0, 0.49);
+                z-index: 99999;
+            }
+
+          
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+.two-section{
+    min-width: 100%;
+
+    .two{
+        flex-direction: column;
+        margin: 0 auto  ;
+        padding: 0 0 0 80px; 
+
+
+
+        &__box{
+            padding: 0 0 0 30px; 
+        }
+
+       
+    }
+}    
+}

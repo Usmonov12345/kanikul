@@ -1,0 +1,70 @@
+.one-section{
+    .one{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &__car1{
+padding: 58px 90px;
+background: #292933;
+margin-top: -5px;
+
+              &__title{
+                color: white;
+                font-size: 40px;
+                text-align: start;
+              }
+              
+              &__text{
+                color: rgba(255, 255, 255, 0.621);
+                font-size: 23px;
+                text-align: start;
+                padding: 20px 0;
+              }
+
+              &__btn{
+                padding: 13px 30px;
+                border-radius: 30pc;
+                background: #B69B89;
+                color: white;
+
+                &:hover{
+                    background-color: #181865;
+                    color: red;
+                }
+
+              }
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+.one-section{
+  border-color: aqua;
+
+  .one{
+    flex-direction: column-reverse;
+
+    &__car1{
+      margin: 30px 0;
+      min-width: 100%;
+    border-radius: 30px;
+    text-align: center;
+      padding: 80px;
+
+      &__title{
+        margin-left: 80px;
+      }
+      &__text{
+        margin-left: 130px;
+      }
+
+
+    }
+  }
+}  
+}

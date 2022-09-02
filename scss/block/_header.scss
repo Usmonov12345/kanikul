@@ -1,0 +1,39 @@
+.header{
+    background: #292933;
+    .hero{
+        max-width: 1200px;
+
+        &__list{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 0;
+
+            &__item{
+                margin: 10px;
+
+                &__link{
+                    color: aliceblue;
+                    border-bottom: 3px solid transparent;
+                    padding-bottom: 4px;
+
+                    &:hover{
+                    border-bottom: 3px solid rgba(255, 255, 255, 0.411);
+
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .header{
+        background: #292933;
+        min-width: 100%;
+        margin: 0 auto;
+        padding: 0 50px;
+}
+}
