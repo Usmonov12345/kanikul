@@ -1,0 +1,99 @@
+.three-section{
+    background-color: bisque;
+    height: 700px;
+    
+    &__title{
+    text-align: center;
+    padding-top: 70px;
+    transition: 5s;
+}
+
+     &__list{
+           display: flex;
+           align-items: center;
+           margin-left:540px;
+           padding-top: 40px;
+
+          
+
+         
+}
+
+a{
+    color:black;
+    border-bottom: 3px solid transparent;
+    transition: 1.3s;
+    &:hover{
+     border-bottom: 3px solid #000;
+     color: #000;
+
+    }
+}
+
+&__item{
+    margin: 20px;
+}
+
+    .three{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__card{
+                padding-top: 40px;
+                padding-bottom: 70px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                    background-color: aliceblue;
+                    transition: 1s;
+                margin: 8px;
+            text-align: center;
+            &:hover{
+                padding-bottom: 120px;
+            }
+
+      
+        }
+        &__text{
+            margin: 0;
+            padding: 10px 4px;
+
+            &:hover{
+                background-color: #000;
+                color: rgb(255, 255, 255);
+                border-radius: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .three-section{
+        width: 100%;
+        background-color: #fff;
+
+        &__list{
+            display: flex;
+            align-items: center;
+            margin-left:200px;
+            padding-top: 40px;
+ 
+           
+ 
+          
+ }
+        .three{
+            flex-direction: column;
+            &__card{
+                min-width: 100%;
+
+
+                &__img{
+                    min-width: 400px;
+                    margin: 0 auto ;
+                }
+            }
+        }
+    }
+}
